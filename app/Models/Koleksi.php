@@ -1,0 +1,21 @@
+<?php
+
+// app/Models/Koleksi.php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+class Koleksi extends Model
+{
+    use HasFactory;
+
+    protected $fillable = [
+        'nama',
+        'deskripsi',
+        'tahun_perolehan',
+        'kondisi',
+        'foto', // Tambahkan ini
+    ];
+}
